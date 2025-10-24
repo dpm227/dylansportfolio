@@ -14,33 +14,6 @@ export const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-  const withBaseHash = (hash) => {
-    if (!hash || !hash.startsWith("#")) return hash;
-    const base = import.meta.env.BASE_URL || "/";
-    // ensure trailing slash on base
-    const normalizedBase = base.endsWith("/") ? base : `${base}/`;
-    return `${normalizedBase}${hash}`;
-  };
-
-  const handleAnchorNav = (e, hash) => {
-    if (!hash?.startsWith("#")) return;
-
-    const target = document.querySelector(hash);
-    if (target) {
-      e.preventDefault(); // keep SPA behavior, no full navigation
-      target.scrollIntoView({ behavior: "smooth", block: "start" });
-
-      // update address bar to include base + hash (good for refresh/copy URL on GH Pages)
-      const base = import.meta.env.BASE_URL || "/";
-      const normalizedBase = base.endsWith("/") ? base : `${base}/`;
-      // If already on the same page, just swap the hash; avoids reloading
-      history.replaceState(null, "", `${normalizedBase}${hash}`);
-
-      // close mobile menu after navigating
-      setIsMenuOpen(false);
-    }
-  };
-
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 10);
@@ -59,8 +32,7 @@ export const NavBar = () => {
       <div className="container flex items-center justify-between">
         <a
           className="text-xl font-bold text-primary flex items-center"
-          href={withBaseHash("#hero")}
-          onClick={(e) => handleAnchorNav(e, "#hero")}
+          href="#hero"
         >
           <span className="relative z-10">
             <span className="text-glow text-foreground">
@@ -76,8 +48,7 @@ export const NavBar = () => {
           {navItems.map((item, key) => (
             <a
               key={key}
-              href={withBaseHash(item.href)}
-              onClick={(e) => handleAnchorNav(e, item.href)}
+              href={item.href}
               className="text-foreground/80 hover:text-primary transition-colors duration-300"
             >
               {item.name}
@@ -107,9 +78,9 @@ export const NavBar = () => {
             {navItems.map((item, key) => (
               <a
                 key={key}
-                href={withBaseHash(item.href)}
+                href={item.href}
                 className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                onClick={(e) => handleAnchorNav(e, item.href)}
+                onClick={() => setIsMenuOpen(false)}
               >
                 {item.name}
               </a>
