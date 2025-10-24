@@ -1,4 +1,4 @@
-# Dylan McClellan — Portfolio
+# Dylan McClellan — [Portfolio](https://dpm227.github.io/dylansportfolio/#hero)
 
 This is my personal developer portfolio built with **React**, **Tailwind CSS**, and **Lucide Icons**.  
 It showcases my projects, experience, and technical skills in a clean, responsive design.
