@@ -2,18 +2,18 @@ import { useState } from "react";
 import { cn } from "@/lib/utils";
 
 const skills = [
+  // Backend
+  { name: "C#", level: 80, category: "backend" },
+  { name: "ASP.NET", level: 75, category: "backend" },
+  { name: "Python", level: 80, category: "backend" },
+  { name: "REST APIs", level: 80, category: "backend" },
+  { name: "SQL", level: 50, category: "backend" },
+
   // Frontend
   { name: "HTML/CSS", level: 70, category: "frontend" },
   { name: "React", level: 50, category: "frontend" },
   { name: "JavaScript", level: 75, category: "frontend" },
   { name: "Flutter", level: 50, category: "frontend" },
-
-  // Backend
-  { name: "C#", level: 80, category: "backend" },
-  { name: "ASP.NET", level: 75, category: "backend" },
-  { name: "Python", level: 80, category: "backend" },
-  { name: "SQL", level: 50, category: "backend" },
-  { name: "REST APIs", level: 80, category: "backend" },
 
   // Systems / Core CS
   { name: "Java", level: 70, category: "systems" },

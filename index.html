@@ -5,6 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="%BASE_URL%vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dylan's Portfolio</title>
+    <style>
+      html.dark {
+        background: #0b0b0b;
+      }
+      body {
+        background: transparent;
+      }
+    </style>
+
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem("theme"); // "dark" | "light" | null
+          var dark = saved ? saved === "dark" : true; // default to dark
+          document.documentElement.classList.toggle("dark", dark);
+        } catch (e) {
+          // if localStorage blocked, stay dark by default
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
