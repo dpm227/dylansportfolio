@@ -6,7 +6,7 @@ It showcases my projects, experience, and technical skills in a clean, responsiv
 ---
 
 ## Inspiration
-This portfolio was inspired by a (YouTube tutorial)[https://www.youtube.com/watch?v=ifOJ0R5UQOc] that provided the base layout and animation concepts.  
+This portfolio was inspired by a [YouTube tutorial](https://www.youtube.com/watch?v=ifOJ0R5UQOc) that provided the base layout and animation concepts.  
 I customized it extensively by adding new sections, refining component structure, improving responsiveness,  
 and integrating my personal branding and projects.
 
