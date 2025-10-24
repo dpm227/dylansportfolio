@@ -49,8 +49,8 @@ const projects = [
     description: "Website to showcase my skills and projects!",
     image: "/projects/project5.png",
     tags: ["React", "HTML", "CSS"],
-    demoURl: "#", // treat "#" as valid or change to "" to hide
-    githubUrl: "",
+    demoURl: "#",
+    githubUrl: "https://github.com/dpm227/dylansportfolio",
   },
   {
     id: 6,
