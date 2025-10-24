@@ -3,31 +3,31 @@ import { cn } from "@/lib/utils";
 
 const skills = [
   // Frontend
-  { name: "HTML/CSS", level: 80, category: "frontend" },
+  { name: "HTML/CSS", level: 70, category: "frontend" },
   { name: "React", level: 50, category: "frontend" },
   { name: "JavaScript", level: 75, category: "frontend" },
   { name: "Flutter", level: 50, category: "frontend" },
 
   // Backend
-  { name: "C#", level: 85, category: "backend" },
-  { name: "ASP.NET", level: 80, category: "backend" },
-  { name: "Python (Flask)", level: 85, category: "backend" },
-  { name: "SQL", level: 60, category: "backend" },
-  { name: "REST APIs", level: 90, category: "backend" },
+  { name: "C#", level: 80, category: "backend" },
+  { name: "ASP.NET", level: 75, category: "backend" },
+  { name: "Python", level: 80, category: "backend" },
+  { name: "SQL", level: 50, category: "backend" },
+  { name: "REST APIs", level: 80, category: "backend" },
 
   // Systems / Core CS
-  { name: "Java", level: 75, category: "systems" },
+  { name: "Java", level: 70, category: "systems" },
   { name: "C++", level: 60, category: "systems" },
-  { name: "Linux/UNIX", level: 90, category: "systems" },
-  { name: "Windows", level: 85, category: "systems" },
+  { name: "Linux/UNIX", level: 85, category: "systems" },
+  { name: "Windows", level: 80, category: "systems" },
 
   // Tools & DevOps
-  { name: "Git", level: 90, category: "tools" },
-  { name: "Microsoft Azure", level: 70, category: "tools" },
+  { name: "Git", level: 80, category: "tools" },
+  { name: "Microsoft Azure", level: 60, category: "tools" },
   { name: "Firebase Cloud Messaging", level: 90, category: "tools" },
-  { name: "Atlassian Forge", level: 80, category: "tools" },
-  { name: "Jira API", level: 90, category: "tools" },
-  { name: "Auth0", level: 90, category: "tools" },
+  { name: "Atlassian Forge", level: 75, category: "tools" },
+  { name: "Jira API", level: 75, category: "tools" },
+  { name: "Auth0", level: 75, category: "tools" },
 
   // Soft/Team
   { name: "Agile Development", level: 75, category: "soft" },

@@ -49,7 +49,7 @@ const projects = [
     id: 3,
     title: "Mesozoic Runner",
     description:
-      "Top-down, runner-style, video game meant to be an arcade game played in a museum. It won third place in the Technology Student Association PA Conference",
+      "Top-down, runner game desgined to be played in a Museum.\nThird Place 🥉 TSA PA Conference\n First Place 🥇 TSA Region 3",
     image: "/projects/project3.png",
     tags: ["Unity", "C#"],
     demoURl: "https://dmac85w.itch.io/mesozoic-runner",
@@ -67,7 +67,8 @@ const projects = [
   {
     id: 6,
     title: "Food for Thought",
-    description: "2D Platformer to spread awareness of food insecurity",
+    description:
+      "2D Platformer game designed to spread awareness of food insecurity",
     image: "/projects/project6.png",
     tags: ["TypeScript", "Node", "Jet Lag Engine"],
     demoURl: "https://www.cse.lehigh.edu/~spear/eng5_2023/engr_005_fl_2023_N/",
@@ -122,7 +123,7 @@ export const ProjectSection = () => {
                   <h3 className="text-xl font-semibold mb-1">
                     {project.title}
                   </h3>
-                  <p className="text-muted-foreground text-sm mb-4">
+                  <p className="text-muted-foreground text-sm mb-4 whitespace-pre-line">
                     {project.description}
                   </p>
 
