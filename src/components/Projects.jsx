@@ -2,6 +2,18 @@ import { ExternalLink, Github, ArrowRight } from "lucide-react";
 
 const isValidUrl = (u) => !!u && u !== "none" && u.trim() !== "";
 
+// ✅ NEW: safely prefix relative paths with Vite base (works locally and on Pages)
+const withBase = (path) => {
+  if (!path) return path;
+  // leave absolute URLs alone
+  if (/^https?:\/\//i.test(path)) return path;
+
+  const base = import.meta.env.BASE_URL || "/";
+  // normalize leading slash
+  const clean = path.startsWith("/") ? path.slice(1) : path;
+  return `${base}${clean}`;
+};
+
 const projects = [
   {
     id: 4,
@@ -88,7 +100,8 @@ export const ProjectSection = () => {
               >
                 <div className="h-48 overflow-hidden">
                   <img
-                    src={project.image}
+                    // ✅ only change: route image paths through withBase
+                    src={withBase(project.image)}
                     alt={project.title}
                     className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                   />
