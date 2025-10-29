@@ -1,4 +1,4 @@
-import { Linkedin, Mail } from "lucide-react";
+import { Linkedin, Mail, GithubIcon } from "lucide-react";
 
 export const ContactSection = () => {
   return (
@@ -42,12 +42,30 @@ export const ContactSection = () => {
                 <div className="flex-1">
                   <div className="text-sm text-muted-foreground">LinkedIn</div>
                   <a
-                    href="https://www.linkedin.com/in/dylan-mcclellan-a88885293/"
+                    href="https://www.linkedin.com/in/dylan-mcclellan/"
                     target="_blank"
                     rel="noreferrer"
                     className="font-medium hover:text-primary transition-colors"
                   >
-                    Dylan McClellan
+                    linkedin.com/in/dylan-mcclellan
+                  </a>
+                </div>
+              </div>
+
+              {/* GitHub */}
+              <div className="flex items-center gap-3 p-4">
+                <span className="w-9 h-9 rounded-full bg-primary/10 grid place-items-center">
+                  <GithubIcon className="h-5 w-5 text-primary" />
+                </span>
+                <div className="flex-1">
+                  <div className="text-sm text-muted-foreground">GitHub</div>
+                  <a
+                    href="https://github.com/dpm227"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="font-medium hover:text-primary transition-colors"
+                  >
+                    github.com/dpm227
                   </a>
                 </div>
               </div>
