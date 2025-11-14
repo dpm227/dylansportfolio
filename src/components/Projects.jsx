@@ -21,7 +21,15 @@ const projects = [
     description:
       "The LU360 Advising Tool is a full-stack web app built to help academic advisors easily record, manage, and summarize their meetings with students. It features secure Auth0 login, a responsive React interface, and an Azure SQL database for storing transcripts, summaries, users, and students. The platform also supports transcript processing using GPT-4o Transcribe.",
     image: "/projects/project4.png",
-    tags: ["Flutter", "Python", "HTML", "React", "Auth0", "Azure SQL Database"],
+    tags: [
+      "Flutter",
+      "Python",
+      "React",
+      "Auth0",
+      "JavaScript",
+      "HTML",
+      "Azure SQL Database",
+    ],
     demoURl: "none",
     githubUrl: "https://github.com/dpm227/lehigh360-advising-tool",
   },
@@ -36,7 +44,9 @@ const projects = [
       "AWS DynamoDB",
       "AWS API Gateway",
       "Python",
+      "JavaScript",
       "React",
+      "HTML",
       "Tailwind CSS",
     ],
     demoURl: "https://dpm227.github.io/valleyguard/",
@@ -48,7 +58,7 @@ const projects = [
     description:
       "This is my personal developer portfolio built with React, Tailwind CSS, and Lucide Icons. It showcases my projects, experience, and technical skills in a clean, responsive design with light/dark mode and smooth animations. Originally inspired by a YouTube tutorial, I customized it extensively with new sections, refined components, and personalized branding to reflect my work as a full-stack developer.",
     image: "/projects/project5.png",
-    tags: ["React", "HTML", "Tailwind CSS"],
+    tags: ["React", "HTML", "Tailwind CSS", "JavaScript"],
     demoURl: "#",
     githubUrl: "https://github.com/dpm227/dylansportfolio",
   },
@@ -97,7 +107,7 @@ export const ProjectSection = () => {
           to expand my skills.
         </p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {projects.map((project) => {
             // support either demoUrl or demoURl key
             const demoUrl = project.demoUrl ?? project.demoURl;
@@ -105,9 +115,9 @@ export const ProjectSection = () => {
             return (
               <div
                 key={project.id}
-                className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
+                className="group bg-card rounded-sm overflow-hidden shadow-xs card-hover"
               >
-                <div className="h-48 overflow-hidden">
+                <div className="h-70 overflow-hidden">
                   <img
                     // route image paths through withBase
                     src={withBase(project.image)}
