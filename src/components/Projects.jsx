@@ -16,22 +16,24 @@ const withBase = (path) => {
 
 const projects = [
   {
-    id: 4,
-    title: "LU 360 Advising Tool",
+    id: 3,
+    title: "ML Vision",
     description:
-      "The LU360 Advising Tool is a full-stack web app built to help academic advisors easily record, manage, and summarize their meetings with students. It features secure Auth0 login, a responsive React interface, and an Azure SQL database for storing transcripts, summaries, users, and students. The platform also supports transcript processing using GPT-4o Transcribe.",
-    image: "/projects/project4.png",
+      "ML Vision is AI-powered classroom attendance system created for the Lehigh AI Hackathon 2025. Instead of roll calls or manual check-ins, the system continuously analyzes live video, recognizes students, and records attendance automatically, down to the timestamp and confidence level. The platform brings together a modern React interface, a robust Spring Boot backend, and a real-time Python vision service, delivering an intuitive and automated attendance experience for both instructors and students.",
+    image: "/projects/project7.png",
     tags: [
-      "Flutter",
+      "Java",
+      "Spring Boot",
       "Python",
       "React",
-      "Auth0",
-      "JavaScript",
       "HTML",
-      "Azure SQL Database",
+      "Tailwind CSS",
+      "PostgreSQL",
+      "Flask",
+      "OpenCV",
     ],
     demoURl: "none",
-    githubUrl: "https://github.com/dpm227/lehigh360-advising-tool",
+    githubUrl: "https://github.com/Sangeethm04/ml_vision",
   },
   {
     id: 2,
@@ -51,6 +53,41 @@ const projects = [
     ],
     demoURl: "https://dpm227.github.io/valleyguard/",
     githubUrl: "https://github.com/dpm227/valleyguard",
+  },
+  {
+    id: 4,
+    title: "LU 360 Advising Tool",
+    description:
+      "The LU360 Advising Tool is a full-stack web app built to help academic advisors easily record, manage, and summarize their meetings with students. It features secure Auth0 login, a responsive React interface, and an Azure SQL database for storing transcripts, summaries, users, and students. The platform also supports transcript processing using GPT-4o Transcribe.",
+    image: "/projects/project4.png",
+    tags: [
+      "Flutter",
+      "Python",
+      "React",
+      "Auth0",
+      "JavaScript",
+      "HTML",
+      "Azure SQL Database",
+    ],
+    demoURl: "none",
+    githubUrl: "https://github.com/dpm227/lehigh360-advising-tool",
+  },
+  {
+    id: 4,
+    title: "LU 360 Advising Tool",
+    description:
+      "WhereToWatch is a full-stack web app that helps users instantly find where any movie or TV show is streaming, renting, or buying. It features search, watchlists, favorites, and platform preferences, powered by Watchmode and TMDB data. Built with Next.js, Prisma, PostgreSQL, Tailwind, and NextAuth. ",
+    image: "/projects/project8.png",
+    tags: [
+      "Next.js",
+      "Prisma",
+      "PostgreSQL",
+      "Tailwind CSS",
+      "NextAuth",
+      "React",
+    ],
+    demoURl: "none",
+    githubUrl: "https://github.com/dpm227/wheretowatch",
   },
   {
     id: 5,
