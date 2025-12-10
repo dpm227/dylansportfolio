@@ -154,7 +154,7 @@ export const ProjectSection = () => {
                 key={project.id}
                 className="group bg-card rounded-sm overflow-hidden shadow-xs card-hover"
               >
-                <div className="h-70 overflow-hidden">
+                <div className="aspect-17/10 overflow-hidden">
                   <img
                     // route image paths through withBase
                     src={withBase(project.image)}
