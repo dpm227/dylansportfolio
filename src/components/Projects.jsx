@@ -16,7 +16,7 @@ const withBase = (path) => {
 
 const projects = [
   {
-    id: 3,
+    id: 7,
     title: "ML Vision",
     description:
       "ML Vision is AI-powered classroom attendance system created for the Lehigh AI Hackathon 2025. Instead of roll calls or manual check-ins, the system continuously analyzes live video, recognizes students, and records attendance automatically, down to the timestamp and confidence level. The platform brings together a modern React interface, a robust Spring Boot backend, and a real-time Python vision service, delivering an intuitive and automated attendance experience for both instructors and students.",
@@ -73,8 +73,8 @@ const projects = [
     githubUrl: "https://github.com/dpm227/lehigh360-advising-tool",
   },
   {
-    id: 4,
-    title: "LU 360 Advising Tool",
+    id: 8,
+    title: "WhereToWatch",
     description:
       "WhereToWatch is a full-stack web app that helps users instantly find where any movie or TV show is streaming, renting, or buying. It features search, watchlists, favorites, and platform preferences, powered by Watchmode and TMDB data. Built with Next.js, Prisma, PostgreSQL, Tailwind, and NextAuth. ",
     image: "/projects/project8.png",
